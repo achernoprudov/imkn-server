@@ -1,16 +1,11 @@
 (ns imkn-server.db.news
-  (:use [imkn-server.db.spec]
+  (:use [imkn-server.db.utils]
         [clojure.tools.logging :only [info]])
   (:require [clojure.java.jdbc :as sql]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Private methods ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;
-
-(defn- timestamp-extr
-  "Convert timestamp (Timestamp) to millis"
-  [timestamp]
-  (.getTime timestamp))
 
 (defn- text-extr
   ([text] text)
@@ -20,7 +15,6 @@
          trimTo (if doTrim max-length length)
          trimmed (subs text 1 trimTo)]
      (if doTrim (str trimmed "...") text))))
-
 
 (defn- prepare-news
   "Preparing news to presenting on the client side"
@@ -40,10 +34,12 @@
 
 (defn add-news [title text]
   (info (str "Adding news with title=" title ", text=" text))
+  (sql/insert! db-spec :news )
+
   (let [results
-        (sql/with-connection
+        (sql/with-db-connection
           db-spec
-          (sql/insert-record
+          (sql/insert-sql
             :news
             {:title title :text text}))]
     (assert (= (count results) 1))
@@ -52,9 +48,9 @@
 (defn get-news [news-id]
   (info (str "Fech news with id=" news-id))
   (let [results
-        (sql/with-connection
+        (sql/with-db-connection
           db-spec
-          (sql/with-query-results
+          (sql/db-query-with-resultset
             rs ["SELECT id, title, text, date FROM news WHERE id = ?" news-id]
             (doall (prepare-news rs))))]
     (assert (= (count results) 1))
@@ -63,9 +59,9 @@
 (defn get-all-news []
   (info (str "Fech all news"))
   (let [results
-        (sql/with-connection
+        (sql/with-db-connection
           db-spec
-          (sql/with-query-results
+          (sql/db-query-with-resultset
             rs ["SELECT id, title, text, date FROM news ORDER BY date DESC"]
             (doall (prepare-news rs 200))))]
     results))

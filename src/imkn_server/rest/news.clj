@@ -12,7 +12,6 @@
 (def all-news
   (cc/GET "/rest/news" []
     (let [results (db/get-all-news)]
-      (info (str "item is " results))
       {:status 200 :body results})))
 
 (def news-by-id
