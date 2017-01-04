@@ -1,14 +1,7 @@
 (ns imkn-server.rest.news
   (:use [clojure.tools.logging :only [info]])
   (:require [compojure.core :as cc]
-            [imkn-server.db.news :as db]
-            [imkn-server.utils.serializer :as serializer]))
-
-;(def all-news
-;  (cc/GET "/rest/news" []
-;    (let [results (map serializer/simple-news (db/get-all-news))]
-;      (info (str "item is " results))
-;      {:status 200 :body results})))
+            [imkn-server.db.news :as db]))
 
 (def all-news
   (cc/GET "/rest/news" []
