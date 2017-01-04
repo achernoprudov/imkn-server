@@ -3,6 +3,12 @@
   (:require [compojure.core :as cc]
             [imkn-server.db.news :as db]))
 
+(def add-news
+  (cc/POST "/rest/news/add" {body :body}
+    (info (str "add news with body=" body))
+    (db/add-news (:title body) (:text body))
+    {:status 201 :body "Created"}))
+
 (def all-news
   (cc/GET "/rest/news" []
     (let [results (db/get-all-news)]

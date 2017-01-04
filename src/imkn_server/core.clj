@@ -9,8 +9,9 @@
               (cc/GET "/" [] "He;")
 
               ; REST API
-              rest-news/news-by-id
+              rest-news/add-news
               rest-news/all-news
+              rest-news/news-by-id
 
               (route/not-found "Not Found"))
 
