@@ -1,6 +1,8 @@
 
 # Created by https://www.gitignore.io/api/clojure,java,intellij,osx,linux,leiningen
 
+db/imkn-server.trace.db
+
 ### Clojure ###
 pom.xml
 pom.xml.asc
