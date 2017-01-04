@@ -11,12 +11,12 @@
 
 (def all-news
   (cc/GET "/rest/news" []
-    (let [results (db/get-all-news)]
+    (let [results (db/all-news)]
       {:status 200 :body results})))
 
 (def news-by-id
   (cc/GET "/rest/news/:id" [id]
-    (let [result (db/get-news id)]
+    (let [result (db/news-by-id id)]
       (info (str "item is " result))
       {:status 200 :body result})))
 

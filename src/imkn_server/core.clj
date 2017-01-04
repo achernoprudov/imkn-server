@@ -4,7 +4,8 @@
             [compojure.handler :as handler]
             [ring.middleware.json :as middleware]
             [imkn-server.rest.news :as rest-news]
-            [imkn-server.rest.comments :as rest-comments]))
+            [imkn-server.rest.comments :as rest-comments]
+            [imkn-server.db.creator :as creator]))
 
 (cc/defroutes app-routes
               (cc/GET "/" [] "Main")
@@ -21,7 +22,8 @@
               (route/not-found "Not Found"))
 
 (def app
-  (-> (handler/site app-routes)
-      (middleware/wrap-json-body {:keywords? true})
-      middleware/wrap-json-response))
+  (->
+    (handler/site app-routes)
+    (middleware/wrap-json-body {:keywords? true})
+    middleware/wrap-json-response))
 

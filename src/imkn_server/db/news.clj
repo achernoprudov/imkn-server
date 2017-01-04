@@ -34,36 +34,17 @@
 
 (defn add-news [title text]
   (info (str "Adding news with title=" title ", text=" text))
-  (sql/insert! db-spec :news )
+  (sql/insert! db-spec :news {:title title :text text}))
 
-  (let [results
-        (sql/with-db-connection
-          db-spec
-          (sql/insert-sql
-            :news
-            {:title title :text text}))]
-    (assert (= (count results) 1))
-    (first (vals results))))
-
-(defn get-news [news-id]
+(defn news-by-id [news-id]
   (info (str "Fech news with id=" news-id))
   (let [results
-        (sql/with-db-connection
-          db-spec
-          (sql/db-query-with-resultset
-            rs ["SELECT id, title, text, date FROM news WHERE id = ?" news-id]
-            (doall (prepare-news rs))))]
+        (sql/query db-spec ["SELECT id, title, text, date FROM news WHERE id = ?" news-id])]
     (assert (= (count results) 1))
-    (first results)))
+    (first (prepare-news results))))
 
-(defn get-all-news []
+(defn all-news []
   (info (str "Fech all news"))
-  (let [results
-        (sql/with-db-connection
-          db-spec
-          (sql/db-query-with-resultset
-            rs ["SELECT id, title, text, date FROM news ORDER BY date DESC"]
-            (doall (prepare-news rs 200))))]
-    results))
-
+  (let [rs (sql/query db-spec ["SELECT id, title, text, date FROM news ORDER BY date DESC"])]
+    (doall (prepare-news rs 200))))
 
