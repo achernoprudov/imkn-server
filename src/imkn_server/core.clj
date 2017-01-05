@@ -6,7 +6,6 @@
             [ring.middleware.json :as middleware]
 
             [imkn-server.rest.post :as posts]
-            [imkn-server.rest.common :as common]
             [imkn-server.rest.comment :as comments])
   (:import (clojure.lang ExceptionInfo)))
 
@@ -16,7 +15,8 @@
               (cc/context "/rest" []
                 posts/api
                 comments/api
-                common/not-found)
+                (route/not-found {:status 404
+                                  :body   {:message "Not found"}}))
 
               (route/not-found "Not Found"))
 
