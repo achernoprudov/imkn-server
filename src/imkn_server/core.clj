@@ -2,23 +2,21 @@
   (:require [compojure.core :as cc]
             [compojure.route :as route]
             [compojure.handler :as handler]
+            [clojure.tools.logging :as log]
             [ring.middleware.json :as middleware]
-            [imkn-server.rest.post :as post-api]
-            [imkn-server.rest.comment :as comment-api]
-            [clojure.tools.logging :as log])
+
+            [imkn-server.rest.post :as posts]
+            [imkn-server.rest.common :as common]
+            [imkn-server.rest.comment :as comments])
   (:import (clojure.lang ExceptionInfo)))
 
 (cc/defroutes app-routes
               (cc/GET "/" [] "Main")
 
-              ; Posts REST API
-              post-api/posts
-              post-api/add-post
-              post-api/post-by-id
-
-              ; Comments REST API
-              comment-api/comments
-              comment-api/add-comment
+              (cc/context "/rest" []
+                posts/api
+                comments/api
+                common/not-found)
 
               (route/not-found "Not Found"))
 

@@ -31,7 +31,6 @@
   ([post-id]
    (all-comments post-id 0))
   ([post-id first-result]
-   (info (str "Fech comments for post with id=[" post-id "] and first_result=[" first-result "]"))
    (let [results (select comment
                          (fields :id :user :text :date)
                          (order :date :DESC)

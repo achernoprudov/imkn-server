@@ -2,32 +2,37 @@
   (:use [clojure.tools.logging :only [info]])
   (:require [compojure.core :as cc]
             [imkn-server.db.post :as db]
-            [imkn-server.utils.error :as error]
-            [clojure.string :as str]))
+            [imkn-server.utils.validator :as validator]))
 
-(def add-post
-  (cc/POST "/rest/posts/add" {{title :title text :text} :body}
-    (info (str "Add post with title=" title ", text=" text))
-    (if (str/blank? title)
-      (throw (error/build-readable "'title' parameter is required")))
-    (if (str/blank? text)
-      (throw (error/build-readable "'text' parameter is required")))
-    (db/add-post title text)
-    {:status 201 :body "Created"}))
+(defn- add-post [title text]
+  (info (str "Add post with title=" title ", text=" text))
+  (validator/validate-params-not-null {:title title :text text})
+  (db/add-post title text))
 
-(def posts
-  (cc/GET "/rest/posts" [first_result]
-    (info (str "Fetch all posts. first_result=" first_result))
-    (let [results (db/all-posts first_result)]
-      {:status 200 :body results})))
+(defn- all-posts [first-result]
+  (info (str "Fetch all posts. first_result=" first-result))
+  (db/all-posts first-result))
 
-(def post-by-id
-  (cc/GET "/rest/posts/:id" [id]
-    (info (str "Fetch post with id=" id))
-    (if (not (db/post-exist? id))
-      (throw (error/build-readable (str "Post with id = " id " does not exist"))))
-    (let [result (db/post-by-id id)]
-      {:status 200 :body result})))
+(defn- post-by-id [id]
+  (info (str "Fetch post with id=" id))
+  (validator/validate-post-exist id)
+  (db/post-by-id id))
+
+;; Posts context
+
+(def api
+  (cc/context "/posts" []
+    (cc/GET "/" [first_result]
+      (let [results (all-posts first_result)]
+        {:status 200 :body results}))
+
+    (cc/GET "/:id" [id]
+      (let [post (post-by-id id)]
+        {:status 200 :body post}))
+
+    (cc/POST "/add" {{title :title text :text} :body}
+      (add-post title text)
+      {:status 201 :body "Created"})))
 
 
 
