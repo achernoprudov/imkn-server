@@ -1,7 +1,14 @@
 (ns imkn-server.db.news
   (:use [imkn-server.db.utils]
+        [korma.core]
         [clojure.tools.logging :only [info]])
-  (:require [clojure.java.jdbc :as sql]))
+  (:require [imkn-server.db.korma :as spec]))
+
+;;; Vars
+
+(defentity news
+           (table :news)
+           (database spec/korma-db))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Private methods ;;;
@@ -34,17 +41,27 @@
 
 (defn add-news [title text]
   (info (str "Adding news with title=" title ", text=" text))
-  (sql/insert! db-spec :news {:title title :text text}))
+  (insert news
+          (values {:title title :text text})))
 
 (defn news-by-id [news-id]
   (info (str "Fech news with id=" news-id))
   (let [results
-        (sql/query db-spec ["SELECT id, title, text, date FROM news WHERE id = ?" news-id])]
+        (select news
+                (fields :id :title :text :date)
+                (where {:id news-id}))]
     (assert (= (count results) 1))
     (first (prepare-news results))))
 
-(defn all-news []
-  (info (str "Fech all news"))
-  (let [rs (sql/query db-spec ["SELECT id, title, text, date FROM news ORDER BY date DESC"])]
-    (doall (prepare-news rs 200))))
+(defn all-news
+  ([] (all-news 0))
+  ([first-result]
+   (info (str "Fech all news with first-result=" first-result))
+   (let [results (select news
+                         (fields :id :title :text :date)
+                         (order :date :DESC)
+                         (limit 10)
+                         (offset first-result))]
+     (prepare-news results 200))))
+
 

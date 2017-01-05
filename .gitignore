@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/clojure,java,intellij,osx,linux,leiningen
 
 db/imkn-server.trace.db
+db/imkn-server.lock.db
 
 ### Clojure ###
 pom.xml
