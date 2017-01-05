@@ -10,8 +10,8 @@
     {:status 201 :body "Created"}))
 
 (def all-news
-  (cc/GET "/rest/news" []
-    (let [results (db/all-news)]
+  (cc/GET "/rest/news" [first_result]
+    (let [results (db/all-news first_result)]
       {:status 200 :body results})))
 
 (def news-by-id

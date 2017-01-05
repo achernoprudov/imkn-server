@@ -9,7 +9,6 @@
 (defn timestamp-extr
   "Convert timestamp (Timestamp) to millis"
   [timestamp]
-  (info (str "class=" (class timestamp)))
   (.getTime timestamp))
 
 (defn exists?

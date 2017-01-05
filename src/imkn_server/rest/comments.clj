@@ -4,12 +4,12 @@
             [imkn-server.db.comments :as db]))
 
 (def add-comment
-  (cc/POST "/rest/news/:id/comments/add" req                    ;[news-id {body :body}]
-    (info (str "add news with body=" req))
-    ;(db/add-comment (:title body) (:text body))
+  (cc/POST "/rest/news/:id/comments/add" {{id :id} :params {user :user text :text} :body}                     ;[news-id {body :body}]
+    (info (str "add news with id=[" id "], user=[" user "], text=[" text "]"))
+    (db/add-comment id user text)
     {:status 201 :body "Created"}))
 
 (def comments
-  (cc/GET "/rest/news/:id/comments" [news-id]
-    (let [results (db/all-comments news-id)]
+  (cc/GET "/rest/news/:id/comments" [id first_result]                          ;[id first_result]
+    (let [results (db/all-comments id first_result)]
       {:status 200 :body results})))
