@@ -41,10 +41,10 @@
   "Check whether posts with id exists"
   (try
     (do
-      (->> (def result (select post
-                               (fields :id)
-                               (where {:id post-id}))))
-      (= (count result) 1))
+      (->> (= 1 (count
+                  (select post
+                          (fields :id)
+                          (where {:id post-id}))))))
     (catch Throwable ex
       false)))
 
@@ -69,6 +69,6 @@
          (select post
                  (fields :id :title :text :date)
                  (order :date :DESC)
-                 (limit 10)
+                 (limit 100)
                  (offset first-result))]
      (prepare-posts results 200))))

@@ -35,6 +35,6 @@
                          (fields :id :user :text :date)
                          (order :date :DESC)
                          (where {:post_id post-id})
-                         (limit 10)
+                         (limit 100)
                          (offset first-result))]
      (prepare-comments results))))
