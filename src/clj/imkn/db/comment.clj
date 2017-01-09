@@ -1,8 +1,8 @@
-(ns imkn-server.db.comment
-  (:use [imkn-server.db.utils]
+(ns imkn.db.comment
+  (:use [imkn.db.utils]
         [korma.core]
         [clojure.tools.logging :only [info]])
-  (:require [imkn-server.db.korma :as spec]))
+  (:require [imkn.db.korma :as spec]))
 
 (defentity comment
            (table :comment)

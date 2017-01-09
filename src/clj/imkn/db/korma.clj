@@ -1,4 +1,4 @@
-(ns imkn-server.db.korma
+(ns imkn.db.korma
   (:require [korma.db :as kdb]
             [clojure.string :as str]))
 

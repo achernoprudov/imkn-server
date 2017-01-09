@@ -1,10 +1,8 @@
-(ns imkn-server.rest.comment
+(ns imkn.rest.comment
   (:use [clojure.tools.logging :only [info]])
   (:require [compojure.core :as cc]
-            [clojure.string :as str]
-            [imkn-server.db.comment :as db]
-            [imkn-server.utils.error :as error]
-            [imkn-server.utils.validator :as validator]))
+            [imkn.db.comment :as db]
+            [imkn.utils.validator :as validator]))
 
 (defn- add-comment [post-id user text]
   (info (str "Add comment to post with id=[" post-id "], user=[" user "], text=[" text "]"))

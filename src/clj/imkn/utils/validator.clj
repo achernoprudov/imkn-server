@@ -1,6 +1,6 @@
-(ns imkn-server.utils.validator
-  (:require [imkn-server.db.post :as db]
-            [imkn-server.utils.error :as error]
+(ns imkn.utils.validator
+  (:require [imkn.db.post :as db]
+            [imkn.utils.error :as error]
             [clojure.string :as str]))
 
 (defn- validate-param-value [map-entry]

@@ -1,9 +1,8 @@
-(ns imkn-server.db.creator
+(ns imkn.db.creator
   (:require [clojure.java.jdbc :as sql])
-  (:use
-    [korma.db]
-    [imkn-server.db.utils]
-    [clojure.tools.logging :only [info]]))
+  (:use [korma.db]
+        [imkn.db.utils]
+        [clojure.tools.logging :only [info]]))
 
 (defn- create-posts-table-query []
   (sql/create-table-ddl :post

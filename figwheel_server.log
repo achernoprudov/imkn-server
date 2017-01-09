@@ -1,0 +1,469 @@
+[0mCompiling "resources/public/javascripts/dev.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.241 seconds.[0m
+[0mCompiling "resources/public/javascripts/dev.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.325 seconds.[0m
+notifying browser that file changed:  resources/public/javascripts/dev.js
+notifying browser that file changed:  resources/public/javascripts/cljs-dev/goog/deps.js
+notifying browser that file changed:  out/cljc/imkn/core.js
+[0mCompiling "resources/public/javascripts/dev.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.213 seconds.[0m
+notifying browser that file changed:  out/cljc/imkn/core.js
+[0mCompiling "resources/public/javascripts/dev.js" from ["src/"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.309 seconds.[0m
+notifying browser that file changed:  resources/public/javascripts/dev.js
+notifying browser that file changed:  resources/public/javascripts/cljs-dev/goog/deps.js
+notifying browser that file changed:  out/cljc/imkn/core.js
+[0mCompiling "resources/public/javascripts/dev.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.283 seconds.[0m
+notifying browser that file changed:  resources/public/javascripts/dev.js
+notifying browser that file changed:  resources/public/javascripts/cljs-dev/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "resources/public/javascripts/dev.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/javascripts/dev.js" in 0.257 seconds.[0m
+notifying browser that file changed:  resources/public/javascripts/dev.js
+notifying browser that file changed:  resources/public/javascripts/cljs-dev/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+Notifyng browser that CSS file changed: resources/public/css/site.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.097 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/core.cljs   line:1  column:1  ----[0m
+
+  [1mLibrary name must be specified as a symbol in :require / :require-macros; offending spec: [] at line 1 src/cljs/imkn/core.cljs[0m
+
+  [33m1[0m  [1m(ns imkn.core[0m
+  [0m [0m  [33m^--- Library name must be specified as a symbol in :require / :require-macros; offending spec: [] at line 1 src/cljs/imkn/core.cljs[0m
+  [36m2[0m  [36m  (:require []))[0m
+  [36m3[0m  [36m[0m
+  [36m4[0m  [36m(defn init! [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.447 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.358 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.283 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.315 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.252 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.98 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.609 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.936 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.769 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.837 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.335 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.294 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.239 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.272 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.3 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.238 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.257 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.236 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.28 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.264 seconds.[0m
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.3 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.086 seconds.[0m
+[36m----  Could not Read  src/cljs/imkn/posts.cljs   line:1  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 1 and column 1[0m
+
+  [33m1[0m  [1m(ns imkn.posts[0m
+  [0m [0m  [33m^--- EOF while reading, starting at line 1 and column 1[0m
+  [36m2[0m  [36m  (:require [reagent.core :as r])[0m
+
+[36m----  Reader Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.293 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom []))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.202 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom []))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.268 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom []))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.215 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom [{:id 1}]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.187 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/core.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 /Users/andrey/Developer/imkn-server/src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r][0m
+  [36m3[0m  [36m            [imkn.posts :as posts]))[0m
+  [33m4[0m  [1m[0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 /Users/andrey/Developer/imkn-server/src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m(def click-count (r/atom 0))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(defn counting-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.159 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/core.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 /Users/andrey/Developer/imkn-server/src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r][0m
+  [36m3[0m  [36m            [imkn.posts :as posts]))[0m
+  [33m4[0m  [1m[0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 /Users/andrey/Developer/imkn-server/src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m(def click-count (r/atom 0))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(defn counting-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.175 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom `[{:id 1}]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.159 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom [{:id 1}]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.16 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom [1]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.204 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:4  column:1  ----[0m
+
+  [1mToo many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+
+  [36m2[0m  [36m  (:require [reagent.core :as r]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(def posts [][0m
+  [0m [0m  [33m^--- Too many arguments to def at line 4 src/cljs/imkn/posts.cljs[0m
+  [36m5[0m  [36m  (r/atom [1]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def posts-component [][0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.324 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:7  column:1  ----[0m
+
+  [1mToo many arguments to def at line 7 src/cljs/imkn/posts.cljs[0m
+
+  [36m 5[0m  [36m  (r/atom [1]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(def posts-component [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 7 src/cljs/imkn/posts.cljs[0m
+  [36m 8[0m  [36m  [:div[0m
+  [36m 9[0m  [36m  (for [post @posts][0m
+  [36m10[0m  [36m    [:p {} (:id post)])])[0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.349 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.262 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.31 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.249 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.258 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.254 seconds.[0m
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.09 seconds.[0m
+[36m----  Could not Analyze  src/cljs/imkn/posts.cljs   line:1  column:1  ----[0m
+
+  [1mLibrary name must be specified as a symbol in :require / :require-macros; offending spec: [] at line 1 src/cljs/imkn/posts.cljs[0m
+
+  [33m1[0m  [1m(ns imkn.posts[0m
+  [0m [0m  [33m^--- Library name must be specified as a symbol in :require / :require-macros; offending spec: [] at line 1 src/cljs/imkn/posts.cljs[0m
+  [36m2[0m  [36m  (:require [reagent.core :as r][0m
+  [36m3[0m  [36m            []))[0m
+
+[36m----  Analysis Error : Please see src/cljs/imkn/posts.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[36m----  Compiler Warning on   target/cljsbuild/public/js/out/cognitect/transit.cljs   line:342  column:1  ----[0m
+
+  [1muuid? already refers to: cljs.core/uuid? being replaced by: cognitect.transit/uuid?[0m
+
+  [36m338[0m  [36m  "Construct a UUID from a string."[0m
+  [36m339[0m  [36m  [s][0m
+  [36m340[0m  [36m  (ty/uuid s))[0m
+  [36m341[0m  [36m[0m
+  [33m342[0m  [1m(defn uuid?[0m
+  [0m   [0m  [33m^--- uuid? already refers to: cljs.core/uuid? being replaced by: cognitect.transit/uuid?[0m
+  [36m343[0m  [36m  "Returns true if x is a transit UUID value, false otherwise."[0m
+  [36m344[0m  [36m  [x][0m
+  [36m345[0m  [36m  (or (ty/isUUID x) (instance? UUID x)))[0m
+  [36m346[0m  [36m[0m
+  [36m347[0m  [36m(defn binary[0m
+
+[36m----  Compiler Warning : Please see target/cljsbuild/public/js/out/cognitect/transit.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.534 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.371 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.401 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.675 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  out/imkn/posts.js
+nil
+java.lang.NullPointerException: null
+ at clojure.core$subs.invokeStatic (core.clj:4805)
+    clojure.core$subs.invoke (core.clj:4799)
+    imkn.db.post$text_extr.invokeStatic (post.clj:21)
+    imkn.db.post$text_extr.invoke (post.clj:15)
+    imkn.db.post$prepare_posts$extractor__30458.invoke (post.clj:31)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$update_in.invokeStatic (core.clj:5950)
+    clojure.core$update_in.doInvoke (core.clj:5939)
+    clojure.lang.RestFn.invoke (RestFn.java:445)
+    imkn.db.post$prepare_posts$update_text__30460.invoke (post.clj:32)
+    clojure.core$comp$fn__4727.invoke (core.clj:2460)
+    clojure.core$map$fn__4785.invoke (core.clj:2646)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:521)
+    clojure.core$seq__4357.invokeStatic (core.clj:137)
+    clojure.core/seq (core.clj:137)
+    cheshire.generate$generate.invokeStatic (generate.clj:127)
+    cheshire.generate$generate.invoke (generate.clj:111)
+    cheshire.core$generate_string.invokeStatic (core.clj:29)
+    cheshire.core$generate_string.invoke (core.clj:13)
+    clojure.lang.AFn.applyToHelper (AFn.java:156)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$update_in.invokeStatic (core.clj:5950)
+    clojure.core$update_in.doInvoke (core.clj:5939)
+    clojure.lang.RestFn.invoke (RestFn.java:467)
+    ring.middleware.json$wrap_json_response$fn__28789.invoke (json.clj:67)
+    clojure.lang.Var.invoke (Var.java:379)
+    figwheel_sidecar.components.figwheel_server$possible_endpoint$fn__23473.invoke (figwheel_server.clj:200)
+    figwheel_sidecar.components.figwheel_server$handle_static_resources$fn__23454.invoke (figwheel_server.clj:173)
+    figwheel_sidecar.components.figwheel_server$handle_index$fn__23444.invoke (figwheel_server.clj:161)
+    figwheel_sidecar.components.figwheel_server$handle_figwheel_websocket$fn__23467.invoke (figwheel_server.clj:195)
+    ring.middleware.cors$wrap_cors$fn__22756.invoke (cors.clj:156)
+    figwheel_sidecar.components.figwheel_server$log_output_to_figwheel_server_log$fn__23435.invoke (figwheel_server.clj:141)
+    org.httpkit.server.HttpHandler.run (RingHandler.java:91)
+    java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:511)
+    java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.414 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/app.js
+notifying browser that file changed:  out/imkn/posts.js
+nil
+java.lang.NullPointerException: null
+ at clojure.core$subs.invokeStatic (core.clj:4805)
+    clojure.core$subs.invoke (core.clj:4799)
+    imkn.db.post$text_extr.invokeStatic (post.clj:21)
+    imkn.db.post$text_extr.invoke (post.clj:15)
+    imkn.db.post$prepare_posts$extractor__30458.invoke (post.clj:31)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$update_in.invokeStatic (core.clj:5950)
+    clojure.core$update_in.doInvoke (core.clj:5939)
+    clojure.lang.RestFn.invoke (RestFn.java:445)
+    imkn.db.post$prepare_posts$update_text__30460.invoke (post.clj:32)
+    clojure.core$comp$fn__4727.invoke (core.clj:2460)
+    clojure.core$map$fn__4785.invoke (core.clj:2646)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:521)
+    clojure.core$seq__4357.invokeStatic (core.clj:137)
+    clojure.core/seq (core.clj:137)
+    cheshire.generate$generate.invokeStatic (generate.clj:127)
+    cheshire.generate$generate.invoke (generate.clj:111)
+    cheshire.core$generate_string.invokeStatic (core.clj:29)
+    cheshire.core$generate_string.invoke (core.clj:13)
+    clojure.lang.AFn.applyToHelper (AFn.java:156)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$update_in.invokeStatic (core.clj:5950)
+    clojure.core$update_in.doInvoke (core.clj:5939)
+    clojure.lang.RestFn.invoke (RestFn.java:467)
+    ring.middleware.json$wrap_json_response$fn__28789.invoke (json.clj:67)
+    clojure.lang.Var.invoke (Var.java:379)
+    figwheel_sidecar.components.figwheel_server$possible_endpoint$fn__23473.invoke (figwheel_server.clj:200)
+    figwheel_sidecar.components.figwheel_server$handle_static_resources$fn__23454.invoke (figwheel_server.clj:173)
+    figwheel_sidecar.components.figwheel_server$handle_index$fn__23444.invoke (figwheel_server.clj:161)
+    figwheel_sidecar.components.figwheel_server$handle_figwheel_websocket$fn__23467.invoke (figwheel_server.clj:195)
+    ring.middleware.cors$wrap_cors$fn__22756.invoke (cors.clj:156)
+    figwheel_sidecar.components.figwheel_server$log_output_to_figwheel_server_log$fn__23435.invoke (figwheel_server.clj:141)
+    org.httpkit.server.HttpHandler.run (RingHandler.java:91)
+    java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:511)
+    java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+

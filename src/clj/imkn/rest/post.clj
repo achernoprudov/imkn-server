@@ -1,8 +1,8 @@
-(ns imkn-server.rest.post
+(ns imkn.rest.post
   (:use [clojure.tools.logging :only [info]])
   (:require [compojure.core :as cc]
-            [imkn-server.db.post :as db]
-            [imkn-server.utils.validator :as validator]))
+            [imkn.db.post :as db]
+            [imkn.utils.validator :as validator]))
 
 (defn- add-post [title text]
   (info (str "Add post with title=" title ", text=" text))

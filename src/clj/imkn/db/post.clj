@@ -1,8 +1,8 @@
-(ns imkn-server.db.post
-  (:use [imkn-server.db.utils]
+(ns imkn.db.post
+  (:use [imkn.db.utils]
         [korma.core]
         [clojure.tools.logging :only [info]])
-  (:require [imkn-server.db.korma :as spec]))
+  (:require [imkn.db.korma :as spec]))
 
 (defentity post
            (table :post)
@@ -42,11 +42,8 @@
   (try
     (do
       (->> (= 1 (count
-                  (select post
-                          (fields :id)
-                          (where {:id post-id}))))))
-    (catch Throwable ex
-      false)))
+                  (select post (fields :id) (where {:id post-id}))))))
+    (catch Throwable _ false)))
 
 (defn add-post [title text]
   (insert post

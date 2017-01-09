@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <resourceExtensions />
     <wildcardResourcePatterns>
+      <entry name="!cljsbuild:*" />
       <entry name="!dev-resources:*" />
       <entry name="!resources:*" />
       <entry name="!?*.java" />

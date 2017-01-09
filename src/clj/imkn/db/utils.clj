@@ -1,4 +1,4 @@
-(ns imkn-server.db.utils
+(ns imkn.db.utils
   (:use [clojure.tools.logging :only [info]])
   (:require [clojure.java.jdbc :as sql]))
 
@@ -18,5 +18,4 @@
     (do
       (->> (sql/query db-spec (format "select 1 from %s" table)))
       true)
-    (catch Throwable ex
-      false)))
+    (catch Throwable _ false)))
